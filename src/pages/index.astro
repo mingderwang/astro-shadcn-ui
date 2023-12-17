@@ -3,9 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { ModeToggle } from '@/components/ModeToggle';
 import { CardWithForm } from '@/components/CardWithForm';
 import { SelectDemo } from '@/components/SelectDemo';
-import { TestComponent } from '@/components/test-component';
+import { ChainList2 } from '@/components/chain-list2';
 ---
 <BaseLayout name="ming">
-  <TestComponent client:load />
+  <ModeToggle client:load />
+  <ChainList2 client:load />
 </BaseLayout>
 
