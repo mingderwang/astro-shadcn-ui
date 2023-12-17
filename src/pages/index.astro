@@ -3,13 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { ModeToggle } from '@/components/ModeToggle';
 import { CardWithForm } from '@/components/CardWithForm';
 import { SelectDemo } from '@/components/SelectDemo';
-import { TableDemo } from '@/components/TableDemo';
+import { TestComponent } from '@/components/test-component';
 ---
 <BaseLayout name="ming">
-<ModeToggle client:load />
-<CardWithForm client:load />
-<SelectDemo client:load/>
-<TableDemo client:load/>
-  <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+  <TestComponent client:load />
 </BaseLayout>
 
