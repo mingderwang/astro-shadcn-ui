@@ -1,18 +1,15 @@
 ---
-import '@/styles/globals.css'
-import { Button } from "@/components/ui/button"
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ModeToggle } from '@/components/ModeToggle';
+import { CardWithForm } from '@/components/CardWithForm';
+import { SelectDemo } from '@/components/SelectDemo';
+import { TableDemo } from '@/components/TableDemo';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<Button>Hello World</Button>
-	</body>
-</html>
+<BaseLayout name="ming">
+<ModeToggle client:load />
+<CardWithForm client:load />
+<SelectDemo client:load/>
+<TableDemo client:load/>
+  <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+</BaseLayout>
 
