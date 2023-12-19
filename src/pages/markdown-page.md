@@ -12,4 +12,3 @@ layout: ../layouts/BaseLayout.astro
  >
   Go home
  </a>
-
