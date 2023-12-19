@@ -2,10 +2,9 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { ModeToggle } from "@/components/ModeToggle";
 import { Chakra } from "@/components/Chakra";
-import ChakraLayout from "@/components/ChakraLayout.astro";
+import { Mini } from "@/components/mini";
 ---
-
 <BaseLayout name="ming">
   <ModeToggle client:load />
-  <ChakraLayout client:load />
+  <Mini client:load />
 </BaseLayout>
