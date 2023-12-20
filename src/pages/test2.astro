@@ -1,11 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { ModeToggle } from "@/components/ModeToggle";
-import { Chakra } from "@/components/Chakra";
-import { Responsive2 } from "@/components/responsive2.tsx";
+import { Responsive } from "@/components/responsive.tsx";
 ---
 
 <BaseLayout name="ming">
   <ModeToggle client:load />
-  <Responsive2 client:load />
+  <Responsive client:load />
 </BaseLayout>
